@@ -46,22 +46,7 @@ hr {
     height: 0;
 }
 
-.tm-site-header {
-    margin-top: 50px;
-    margin-bottom: 115px;
-}
 
-.tm-site-logo {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    background-color: white;    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.tm-site-logo i { color: #0CC; }
 
 .tm-main {
     margin-left: 400px;
@@ -232,6 +217,10 @@ ul {
     font-size: 1.7rem;
     transition: all 0.3s ease;
 }
+.title-link {
+    text-decoration: none;
+}
+
 
 .tm-h3 {
     font-size: 1.3rem;
@@ -369,12 +358,12 @@ a.tm-color-gray, .tm-color-gray { color: #999; }
 a.tm-color-gray:hover { color: #099; }
 .tm-bg-gray { background-color: #F3F4F5; }
 button:focus { outline: none; }
-a:hover { 
+Link:hover { 
     text-decoration: none; 
     color: #048c8c;
 }
 
-a:hover figcaption { color: #056767; }
+Link:hover figcaption { color: #056767; }
 .img-thumbnail { max-width: none; }
 .tm-about-pad { padding: 40px 35px; }
 .tm-person { max-width: 430px; }
@@ -417,9 +406,3 @@ a:hover figcaption { color: #056767; }
 
 .tm-contact-form label { font-size: 1.4rem; }
 .tm-contact-form .form-group { display: flex; }
-
-
-.text-center {
-    text-decoration: none;
-    color: #fff;
-}

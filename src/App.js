@@ -3,12 +3,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./Assets/responsive.css";
 import "./Assets/app.css";
 
-import Logo from "./Components/Logo";
+import Logo from "./Components/logo/Logo";
 import Menu from "./Components/Menu";
 import SocMedia from "./Components/SocMedia";
 import Search from "./Components/Search";
 import ArticleList from "./Components/ArticleList";
-import Create from "./Components/Create";
+import Create from "./Components/create/Create";
 import Detail from "./Components/Detail";
 
 function App() {

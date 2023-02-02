@@ -1,0 +1,27 @@
+.tm-site-header {
+  margin-top: 50px;
+  margin-bottom: 115px;
+  text-align: center;
+
+  a {
+    color: azure;
+  }
+
+  :hover {
+    text-decoration: none;
+  }
+  .tm-site-logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    i {
+      color: #0cc;
+    }
+  }
+}

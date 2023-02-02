@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { Api } from "../utils/api";
 
 const ArticleList = () => {
   const [articles, setArticles] = useState([]);
-  const Api = "http://localhost:5000";
 
   useEffect(() => {
     setTimeout(() => {
@@ -28,6 +28,7 @@ const ArticleList = () => {
 
   return (
     <div className="row tm-row">
+  
       {ReversedArticle.map((item) => (
         <div className="col-12 col-md-6 tm-post" key={item._id}>
           <hr className="tm-hr-primary" />
@@ -36,7 +37,7 @@ const ArticleList = () => {
               <img src="img/img-01.jpg" alt="mage" className="img-fluid" />
             </div>
             {/* <span className="position-absolute tm-new-badge">New</span> */}
-            <Link to={`article/${item._id}`}>
+            <Link to={`article/${item._id}`} className="title-link">
               <h2 className="tm-pt-30 tm-color-primary tm-post-title">
                 {item.title}
               </h2>
@@ -45,7 +46,7 @@ const ArticleList = () => {
           <p className="tm-pt-30">{item.article}</p>
           <div className="d-flex justify-content-between tm-pt-45">
             <span className="tm-color-primary">Travel . Events</span>
-            <span className="tm-color-primary">June 24, 2020</span>
+            <span className="tm-color-primary">{item.createdAt}</span>
           </div>
           <hr />
           <div className="d-flex justify-content-between">

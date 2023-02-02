@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
-    <div>
+    <Fragment>
       <button
         className="navbar-toggler"
         type="button"
@@ -14,33 +14,21 @@ const Menu = () => {
 
       <nav className="tm-nav" id="tm-nav">
         <ul>
-          <li className="tm-nav-item active">
+          <li className="tm-nav-item">
             <Link to="/" className="tm-nav-link">
               <i className="fas fa-home"></i>
-              Blog Home
+              Home
             </Link>
           </li>
           <li className="tm-nav-item">
             <Link to="/create" className="tm-nav-link">
               <i className="fas fa-pen"></i>
-              Create
-            </Link>
-          </li>
-          <li className="tm-nav-item">
-            <Link to="/something" className="tm-nav-link">
-              <i className="fas fa-pen"></i>
-              Something
-            </Link>
-          </li>
-          <li className="tm-nav-item">
-            <Link to="/contact" className="tm-nav-link">
-              <i className="fas fa-pen"></i>
-              Contact
+              Create Article
             </Link>
           </li>
         </ul>
       </nav>
-    </div>
+    </Fragment>
   );
 };
 
